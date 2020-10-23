@@ -1,0 +1,9 @@
+﻿<Application x:Class="PrQ.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:PrQ"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <XmlDataProvider x:Key="XXX" Source="/XmS/XMLFile1.xml"></XmlDataProvider>
+    </Application.Resources>
+</Application>

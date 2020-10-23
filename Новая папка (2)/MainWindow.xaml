@@ -1,0 +1,33 @@
+﻿<Window x:Class="PrQ.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PrQ"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="1000">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>       
+        </Grid.ColumnDefinitions>
+        <Grid Background="AliceBlue"></Grid>
+        <Grid Background="Azure" Grid.Column="1"></Grid>
+        <Grid Background="Blue" Grid.Column="2"></Grid>
+        <StackPanel>
+            <Image Source="/Images/111.jpg"></Image>
+            <Label Content="    Менюшка" FontSize="25" FontWeight="Bold"></Label>
+        </StackPanel>
+        <StackPanel VerticalAlignment="Bottom">
+            <Button x:Name="BtnPage2" Content="Страница 1" Click="BtnPage2_Click" FontSize="24" Background="Blue" ></Button>
+            <Button x:Name="BtnPage1" Content="Страница 2" Click="BtnPage1_Click" FontSize="24" Background="Blue" ></Button>
+            <Button x:Name="BtnInfo" Content="Информация" Click="BtnInfo_Click" FontSize="24"  Background="MediumSlateBlue"></Button>
+            <Button x:Name="BtnSettings" Content="Настройки" Click="BtnSettings_Click" FontSize="24" Background="MediumSlateBlue" ></Button>
+            <Button x:Name="BtnExit" Content="Выход" Click="BtnExit_Click" FontSize="24" ></Button>
+        </StackPanel>
+        <Frame x:Name="MeinFrame" Grid.Column="1" NavigationUIVisibility="Visible"></Frame>
+        <Label x:Name="Timers" Grid.Column="2" FontSize="24"></Label>
+
+    </Grid>
+</Window>
